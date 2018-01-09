@@ -1,6 +1,6 @@
 {
   "name": "babel-plugin-transform-es2015-regularjs",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "use es6 class to write regular component",
   "main": "index.js",
   "scripts": {
