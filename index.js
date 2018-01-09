@@ -30,7 +30,7 @@ module.exports = function (babel, opts) {
                                     //this
                                     types.thisExpression(),
                                     //super()
-                                    types.identifier('super')
+                                    types.identifier('supr')
                                 ), args
                             )
                         )
