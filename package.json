@@ -1,13 +1,13 @@
 {
-  "name": "plugin1",
-  "version": "1.0.0",
-  "description": "",
+  "name": "babel-plugin-transform-es2015-regularjs",
+  "version": "0.0.1",
+  "description": "use es6 class to write regular component",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "babel-core": "^6.26.0",
     "babel-generator": "^6.26.0",
