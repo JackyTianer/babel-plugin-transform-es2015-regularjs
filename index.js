@@ -18,7 +18,7 @@ module.exports = function (babel, opts) {
             if (crt.key.name !== 'constructor') {
                 // 对函数body处理，将super.xxx(1,2) 转换成this.supr(1,2);
                 crt.body.body = crt.body.body.reduce((pre, crt) => {
-                    var statement = crt;
+                    let statement = crt;
                     // 如果是super.xxx()的语句
                     if (types.isCallExpression(statement.expression) && statement.expression.callee.object.type === 'Super') {
                         let args = statement.expression.arguments;
