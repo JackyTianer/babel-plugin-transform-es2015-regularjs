@@ -7,7 +7,7 @@
 
 ```
 npm i babel-plugin-transform-es2015-regularjs --save-dev
-也可配合NEJ模块插件 **babel-plugin-transform-nej-module**使用
+也可配合NEJ模块插件 babel-plugin-transform-nej-module使用
  
 // 还需要根据需要安装对应的ES版本
 npm i babel-preset-env --save-dev
@@ -44,8 +44,6 @@ npm i babel-preset-env --save-dev
    ```
 
 2. 函数与继承
-
-
    ```javascript
    // ES6 code
    class A extends Regular{
@@ -55,14 +53,13 @@ npm i babel-preset-env --save-dev
            // your code
        }
    }
-
    // regular code
-  var a = Regular.extend({
+   var a = Regular.extend({
       config:function(){
           this.super();
           this.data.text = 1;
       }
-  })
+   })
    ```
 
 3. 普通属性
