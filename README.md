@@ -96,10 +96,7 @@ npm i babel-preset-env --save-dev
       }
    })  
  
-  ```
-
-
-   ​
+   ```
 
 ## 示例代码
 
