@@ -15,9 +15,7 @@ fs.readFile(fileName, function (err, data) {
 
     // use our plugin to transform the source
     var out = babel.transform(src, {
-        plugins: [[plugin, {
-            isComponentsPool: true
-        }]]
+        plugins: [[plugin]]
     });
 
     // print the generated code to screen

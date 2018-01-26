@@ -3,7 +3,7 @@
  */
 
 let tpl = ``;
-class A extends B {
+class A extends Regular {
     constructor() {
         super();
         this.template = tpl;
