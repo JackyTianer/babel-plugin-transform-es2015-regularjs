@@ -5,7 +5,8 @@
   "description": "use es6 class to write regular component",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1"，
+    "publish": ""
   },
   "repository": {
     "type": "git",
