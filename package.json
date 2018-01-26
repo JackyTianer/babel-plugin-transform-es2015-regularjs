@@ -1,12 +1,12 @@
 {
   "name": "babel-plugin-transform-es2015-regularjs",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "homepage": "https://github.com/JackyTianer/babel-plugin-transform-es2015-regularjs",
   "description": "use es6 class to write regular component",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"，
-    "publish": ""
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "publish-plg": "npm publish"
   },
   "repository": {
     "type": "git",
