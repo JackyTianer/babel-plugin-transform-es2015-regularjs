@@ -17,6 +17,9 @@ class A extends B {
     setParam(a) {
         let b = a;
         super.setParam(a);
+        setTimeout(function () {
+            
+        })
     }
 }
 export default A;

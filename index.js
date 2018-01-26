@@ -20,7 +20,9 @@ module.exports = function (babel, opts) {
                 crt.body.body = crt.body.body.reduce((pre, crt) => {
                     let statement = crt;
                     // 如果是super.xxx()的语句
-                    if (types.isCallExpression(statement.expression) && statement.expression.callee.object.type === 'Super') {
+                    if (types.isCallExpression(statement.expression) &&
+                        types.isMemberExpression(statement.expression.callee) &&
+                        statement.expression.callee.object.type === 'Super') {
                         let args = statement.expression.arguments;
                         // 构建语句
                         statement = types.expressionStatement(
