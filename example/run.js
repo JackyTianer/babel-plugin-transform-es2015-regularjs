@@ -15,6 +15,13 @@ fs.readFile(fileName, function (err, data) {
 
     // use our plugin to transform the source
     var out = babel.transform(src, {
+        presets: [
+            ["env", {
+                "targets": {
+                    "browsers": ["last 2 versions", "IE 8-10"]
+                }
+            }]
+        ],
         plugins: [[plugin]]
     });
 
