@@ -2,12 +2,15 @@
  * Created by jackytianer on 2018/1/3.
  */
 
-let tpl = ``;
+let tpl = `<div>hello world</div>`;
 class A extends Regular {
     constructor() {
         super();
         this.template = tpl;
         this.rules = {};
+    }
+    static staticFunc(param) {
+        return param + 1;
     }
 
     config() {
