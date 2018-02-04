@@ -61,8 +61,37 @@ npm i babel-preset-env --save-dev
       }
    })
    ```
+   
+3. 静态方法
+```javascript
+   // ES6 code
+   class A extends Regular{
+       static staticFunc(param){
+           return param;
+       }
+       config(){
+           super.config();
+           this.data.text = 1;
+           // your code
+       }
+   }
+   // regular code
+   
+    var A = Regular.extend({
+        config: function config() {
+        this.supr();
 
-3. 普通属性
+        this.data.text = 1;
+        // your code
+    }
+    });
+
+    A.staticFunc = function (param) {
+        return param;
+    };
+   ```
+
+4. 普通属性
 
    ```javascript
    // ES6 code
